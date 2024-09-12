@@ -26,8 +26,8 @@ export default function Home() {
         {/* First Widget: About Me + Tabs */}
         <div className="relative mb-6 p-8 rounded-3xl shadow-lg shadow-black bg-[#363C43]">
           {/* Right Stick in First Widget */}
-          <div className="absolute top-0 right-0 h-full w-[4px] bg-[#9ca3af]"></div> {/* Color stick */}
-          
+          <div className="absolute top-0 right-0 h-full w-[4px] bg-[#9ca3af]"></div>{" "}
+          {/* Color stick */}
           {/* Tabs Section */}
           <div className="container space-x-4 mb-4 text-center text-xl bg-[#171717] rounded-2xl relative">
             {["About Me", "Experiences", "Recommended"].map((tab) => (
@@ -52,7 +52,6 @@ export default function Home() {
               </span>
             </div>
           </div>
-
           {/* Grid Content Section based on selected tab */}
           <div className="grid grid-cols-2 gap-4 p-6 rounded-lg">
             {selectedTab === "About Me" && (
@@ -99,7 +98,7 @@ export default function Home() {
 
         {/* Second Widget: Gallery with White Glow */}
         <div
-          className="p-6 bg-[#363C43] rounded-3xl shadow-lg shadow-black transition-all"
+          className="p-6 bg-[#363C43] rounded-3xl  shadow-black transition-all"
           style={{ boxShadow: "0 0 15px 5px rgba(255, 255, 255, 0.4)" }}
         >
           <div className="flex justify-between items-center mb-4">
@@ -144,5 +143,4 @@ export default function Home() {
       </div>
     </main>
   );
-
 }
